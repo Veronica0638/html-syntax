@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+    <!--HTML stellt den Inhalt Ihrer Webseite dar, während CSS definiert, wie dieser Inhalt dem Benutzer präsentiert wird.-->
 <head>
   <meta charset="UTF-8"/> 
-   <meta name="viewport" content="width=device-width,initial-scale=1.0"/><link rel="stylesheet" href="style.css"/>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" href="box-styles.css"/>
     
     <!-- the following meta tags for Search engine optimization(SEO)-->
-    <!--<meta name="description" content="HTML Challenge"/>-->
+    <meta name="description" content="HTML Challenge"/>
     <meta name="keywords" content="HTML,CSS,Web Development"/>
     <meta name="author" content="Veronica"/>
-    <!-- base url https://www.30daysofreact.com
-    <base href="https://www.30daysofreact.com" target="_blank"/-->
+    
+    <base href=" https://github.com/Asabeneh/30-Days-Of-HTML/blob/master/readme.md#30-days-of-html" target="_blank"/>
     <!-- Goes to the task bar on the browser-->
     
-    <title> HTML </title>
-    <link rel="stylesheet" href="./main.css"/>
-    
+    <title>>HTML-syntax</title>
+                                                   
     <style>
     .letter 
         {font-size: 78px;}
@@ -28,6 +28,11 @@
         #letter-l
         {color:#61dbfb;}
     </style>
+    <style>
+        body {color:#414141; background-color:#EEEEEE;font-size:18px;}
+   
+        <p>body {color: #0000FF;}</p>    /* Blue */
+    </style>
     
     <!-- The script tag allows to write JS code -->
     
@@ -35,13 +40,24 @@
       console.log ('Welcome to 30 Days of JavaScript')
     </script>
     
+   <!--var p= {font-size: 20px;color: blue;}
+    var p= document.getElementById('some-paragraph');
+p.addEventListener('click', function(event) {p.innerHTML = 'You clicked it!';};)-->
+    
 </head>
     
-<body>
+    <!-- /*Kommentar in CSS*/-->
+
+     <!--body.{text-align:center;}{font-weight:normal;}-->
+      <!--  em. {font-weight: bold; {font-style: normal;}
+    strong. { font-weight: normal; font-style: italic;}-->
+  
+   
+    
     <div id="root">
-      <div class="wrapper">  
-    </div>
+      <div class="wrapper">
         
+    </div>
     <main>
 <header class="banner" id="top">
     <span style="color:darkorange">H</span>
@@ -53,18 +69,22 @@
     <span class="letter" id="letter-t">T</span>
     <span class="letter" id="letter-m">M</span>
     <span class="letter" id="letter-l">L</span>
+    
 </header>
          </main>   
     
         <main>
+            <section>
         <h1 id="first-title" style="color:brown;font-size:90px; background:deepskyblue;"> The building Blog of the WEB</h1>
-                <div class="introduction"
+                <!--h1 {font-size:36px;2em;}-->
+                <div class="introduction"></div>
                 <p><a href="https://github.com/Asabeneh/30-Days-Of-HTML">30 Days Of HTML</a></p>
-            </main>
+            </section>
+        </main>
         
     <articel>  
         <p>There is no website without HTML</p>
-     </articel>      
+         </articel>      
     
             
   <div>
@@ -80,20 +100,55 @@
             h4 is 16px (1em)
             h5 is 12.8px (0.8em)
             h6 is 11.2px (0.7em--> 
+      
 </div> 
 
-        <section> 
-    <h2>Front end Technologis</h2>
-        <ul>
+      
+    <h2>Front-end Technologis</h2>
+           
+          
+        <p>Paragraphs are blocks, too. Elements are not. They are <strong>inline</strong> elements.</p>
+
+    <p>Block elements define the flow of the HTML document, while inline elements
+       do not.</p>
+        
+        <section>  
+            <p>You can style unordered lists with the following bullets:</p> 
+             <p>This is how you make an unordered list:</p>
+       
+<ul>
+  <li>Add a "ul" element (it stands for unordered list)</li>
+  <li>Add each item in its own "li" element</li>
+  <li>They don't need to be in any particular order</li>
+</ul>
+              
+    <ul>
              <li>HTML</li>
              <li>CSS</li>
             <li>javaScript</li>
-        </ul>
-        </section>  
+    </ul>    
+        </section> 
+        
+    <section>
+            <p>And you can number ordered lists with the following:</p>
+             <!--ordered List-->
+            <p>This is what an ordered list looks like:</p>
+<ol>
+  <li>Notice the new "ol" element wrapping everything</li>
+  <li>But, the list item elements are the same</li>
+  <li>Also note how the numbers increment on their own</li>
+  <li>You should be noticing things is this precise order, because this is
+      an ordered list</li>
+</ol>
+        </section>
+        
     
-    <p><b></b>The most populated countries</p>
-              <ol>
-                <li>China</li>
+    <p><b>The most populated countries</b></p>
+         <u{list-style-type: circle;}>
+             
+         <section>    
+    <ul>
+            <ol>
                 <li>India</li>
                 <li>USA</li>
                 <li>Indonesia</li>
@@ -103,12 +158,13 @@
                 <li>Bangladesh</li>
                 <li>Russia</li>
                 <li>Japan</li>
-              </ol>
-              
-              <!--ordered List-->
-    <ul><br>
-            <ul>
-              <ol>
+            </ol>
+    </ul>
+        </section>
+           
+   <br/>             
+        <section>
+        <ol>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -117,11 +173,13 @@
                 <li>Node</li>
                 <li>MongoDB</li>
                 <li>GatsBy</li>
-              </ol>
-        </ul><br>
+        </ol>
         
-             <!--description list-->
-<ul><dl>
+        <br>
+      </section>  
+              <!--description list-->
+    
+<dl>
         <dt><b>HTML</b></dt>
             <dd>HTML(HyperText Markup Language) is the build block the web.</dd>
         <dt><b>CSS</b></dt>
@@ -130,19 +188,21 @@
             <dd>JavaScript is a programming language that can add interactivity to websites</dd>
         <dt><b>React</b></dt>
             <dd>React is a modern JavaScript library that was initial released on May 29,2013.</dd>
-</dl><br>
+</dl>
+        
+        <br/>
+    <ul>
                 <img src='./assets/images/html.png' alt='HTML Logo'><br>
                 <img src='./assets/images/css_logo.png' alt='CSS Logo'><br>
                 <img src='./assets/images/js_logo.png' alt='JS Logo'><br>
             
                   <!-- To link an image: <img tag and <src attribute, we putthe path in the src -->
-
-    </ul>
-
-              <video src=""></video>
-              
+             <video src=""></video>
+    </ul> 
+            
+    <ul>
         <br><b>Create bold text</b><br>
-        - <strong> - "Make an important text" </strong><br>
+        - <strong> - "Make an important text"</strong><br>
         - <i> -  Make italic text</i><br>
         - <em> -  Make emphases to text</em><br>
         - <mark> - Marks text</mark><br>
@@ -154,19 +214,24 @@
         - <pre>Preserve text space</pre><br>
         - <u> -To underline</u><br>
             
-    <ul><br>   
+    </ul>
+            
+   <br/>
+    
+
+            
               <h3>Audios</h3>
     
                 <audio controls><source src="./assets/audios/audio_1.mp3" /></audio>
                 <audio controls><source src="./assets/audios/audio_2.mp3" /></audio>
                 <audio controls></audio>
          
-            <form><br>
-            <label>Name</label> 
-            <input type="text"/>
-            <input type="submit" value="Submit"/>
-    </form ><br>
-     </ul><br>
+            <form><br/>
+        <label>Name</label> 
+        <input type="text"/>
+        <input type="submit" value="Submit"/>
+    </form ><br/>
+        <br/>
         
     
         <ul>
@@ -178,7 +243,7 @@
     </ul>
               
         
-                  
+<hr/>              
                   
 <footer>
     <div>
@@ -198,37 +263,49 @@
               <i class="fab fa-twitter-square"></i></a>
     </div>
     
-            <div class="arrow-icon-wrapper">
-            <a href="#top"><i class="fas fa-arrow-alt-circle-up"></i></a>
-            </div>
-            
-         <div>
-            <hr><a href="#top">Back to Top</a><br>
-        </div>
-    
-    </footer>
+        
+</footer>
                   
           <!-- button allows to do some acction --> 
         
-    <button onclick="alert('Welcome to 30 DaysOfHTML')"> see more?<br>Click Me</button>
+           <!--<p>CSS lets us style HTML elements. There’s also
+       <a href='dummy.html'>another page</a> associated with this example.</p>-->
+
+    <div>
+        <button onclick="alert('Welcome to 30 DaysOfHTML')">
+            <a href "https://github.com/Veronica0638/30-Days-Of-HTML">
+            </a> see more?<br/>ClickMe</button>
+    </div>
 
         <!--So öffnen Sie die Chrome-Konsole mithilfe einer Tastenkombination
                 Windows / Linux:
                 Öffnen Sie die Konsole mit:Strg + Umschalt + J
                 Schreiben von Code in die Browserkonsole Strg + Umschalt + I.
                 Das Identifizieren und Entfernen von Fehlern aus einem Programm wird als Debuggen bezeichnet.-->
+            
+        <div class="arrow-icon-wrapper">
+          <a href="#top">
+            <i class="fas fa-arrow-alt-circle-up"></i></a>
+            
+            <hr><a href="#top">Back to Top</a><br>
+    
         </div>
     </body>
 </html>
 
+<hr/>
 
 <!DOCTYPE html>
  <html> 
   <head> 
     <title> 30DaysOfJavaScript: Inline-Skript</title> 
   </head> 
+     <p>Want to try crossing out an <a href='nowhere.html'
+   style='color: #990000; text-decoration: line-through;'>obsolete link</a>?
+   This is your chance!</p>
+   
   <body> 
-    <button onclick="alert('Welcome to 30DaysOfJavaScript')"> JS- Click here </button> <script>console.log('welcome to 30daysofJavaSript'</script>
+      <button onclick="alert('Welcome to 30DaysOfJavaScript')"> JS- Click here </button> <script>console.log('welcome to 30daysofJavaSript'</script>
       
       <!--Für eine Variable, die sich zu einem anderen Zeitpunkt ändert, verwenden wir "let" . Wenn sich die Daten überhaupt nicht ändern, verwenden wir "const"-->
       
@@ -240,32 +317,3 @@
         Ein JavaScript-Variablenname sollte kein Leerzeichen zwischen Wörtern enthalten.--> 
   </body> 
 </html>
-
-  <! DOCTYPE html >
-   < html > 
-    < head > 
-      < title > JavaScript für alle </ title > 
-    </ head > 
-    < body > 
-      < button  onclick = " alert ('Willkommen bei JavaScript!'); " > Klicken Sie auf mich </ button > 
-    </ body > 
-  </ html >
-  
-  
-
-
-
-
-      
-
-            
-        
-                
-                
-          
-          
--            
-                 
-                                       
-                                          
-        
